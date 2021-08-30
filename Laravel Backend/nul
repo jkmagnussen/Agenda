@@ -1,0 +1,3 @@
+find: /usr/sbin/authserver: Permission denied
+find: /usr/local/mysql-8.0.18-macos10.14-x86_64/keyring: Permission denied
+find: /usr/local/mysql-8.0.18-macos10.14-x86_64/data: Permission denied
