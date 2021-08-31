@@ -1,4 +1,4 @@
-<h1 align="center" width="500" color="green">Agenda</h1>
+<h1 align="center" width="550" color="green">Agenda</h1>
 
 ## About This Application:
 
