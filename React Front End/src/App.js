@@ -74,7 +74,6 @@ function App(){
         filteredTodos={filteredTodos}/>
         </div>
 
-      
       }
       {loggedIn === true ?
         <div>
