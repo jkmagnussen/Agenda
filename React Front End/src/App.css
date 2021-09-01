@@ -46,6 +46,7 @@ form button:hover {
 .todo-list {
   min-width: 30%;
   list-style: none;
+  margin-bottom: 14vh;
 }
 
 .todo {
@@ -137,3 +138,42 @@ select {
   transform: scale(1.5);
 }
 */
+.logoutDelete {
+  display: block;
+  max-width: 300px;
+  margin-left: 3000px;
+}
+
+.logoutBtn,
+.deleteAccount {
+  color: rgba(255, 255, 255, 0.397);
+  font-family: "Poppins", sans-serif;
+  margin: 3vh;
+  font-size: 3vh;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.todoPlaceholder {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 3vh;
+  opacity: 0.9;
+}
+
+.footer {
+  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}

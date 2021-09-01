@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.loginBody {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  min-height: 60vh;
+  display: inline-block;
+  width: 100vw;
+  text-align: center;
+  margin: auto;
+}
+header {
+  font-size: 2rem;
+}
+
+.userName,
+.password {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+  margin: 3vh;
+  color: gray;
+}
+
+.loginBtns {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 3vh;
+  font-size: 5vh;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.loginBtnsAlt {
+  color: rgb(71, 71, 71);
+  font-family: "Poppins", sans-serif;
+  margin: 3vh;
+  font-size: 5vh;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}

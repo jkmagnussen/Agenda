@@ -1,5 +1,7 @@
 import React from "react";
 
+import todoPic from "../Media/todo.jpg";
+
 
 function Form({setInputText, todos, setTodos, inputText, setStatus, filteredTodos})
 {
@@ -30,6 +32,8 @@ function Form({setInputText, todos, setTodos, inputText, setStatus, filteredTodo
   }
 
   return (
+    <div>
+      <h2 style={{textAlign: "center"}}>hello username</h2>
     <form>
       <input type="text" className="todo-input" onChange={inputTextHandler} value={inputText}/>
       <button onClick={submitTodoHandler} className="todo-button" type="submit">
@@ -42,7 +46,10 @@ function Form({setInputText, todos, setTodos, inputText, setStatus, filteredTodo
           <option value="uncompleted">Uncompleted</option>
         </select>
       </div>
-    </form>
+      </form>
+      {todos === "" ? <img className="todoPlaceholder" alt="" src={todoPic}/> : ""}
+
+    </div>
   ); 
 }
 

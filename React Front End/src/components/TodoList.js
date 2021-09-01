@@ -15,7 +15,7 @@ function TodoList({todos, setTodos, filteredTodos}) {
         ))}
 
       </ul>
-    </div>
+      </div>
   ); 
 }
 
