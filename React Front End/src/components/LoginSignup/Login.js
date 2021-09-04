@@ -11,6 +11,11 @@ function Login({setLogin, loginEmail, setLoginEmail, loginPassword, setLoginPass
   
       const loginPasswordHandler = (e) => {
 setLoginPassword(e.target.value)
+      };
+  
+    const loginHandler = (e) => {
+    setLogin(true);
+    console.log(`${loginEmail} + ${loginPassword}`)
   };
 
   return (
@@ -20,6 +25,7 @@ setLoginPassword(e.target.value)
       <br/>
       <input onChange={loginPasswordHandler} type="text" className="password" value={loginPassword} />
         <br />
+      <button onClick={loginHandler}className="loginBtns">Enter</button>
     </div>
   ); 
 }

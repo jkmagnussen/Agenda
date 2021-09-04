@@ -2,9 +2,9 @@
 
 ## About This Application:
 
-This application is designed to provide a user authenticated account that enables individuals to store a to do list with or without a deadline that color codes tasks based on the remaining time left.
+This application is designed to provide a user authenticated account that enables individuals to store a to do list with or without a deadline that categorises tasks based on whether they're completed or not.
 
-By developing this application, i intend to demonstrate my ability and compitence with full stack development, encompassing front-end JavaScript (React), back-end php(Laravel) and a database (MySQL) enabling the application to hold persistent data.
+By developing this application, i intend to demonstrate my ability and competence with full stack development, encompassing front-end JavaScript (React), back-end php(Laravel) and a database (MySQL) enabling the application to securely hold persistent data.
 
 To run the application React Front End:
 

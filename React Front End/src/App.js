@@ -12,10 +12,13 @@ function App(){
   const [filteredTodos, setFilteredTodos] = useState([]);
   const [loggedIn, setLogin] = useState(false)
 
-  const [loginEmail, setLoginEmail] = useState("");
-  const [loginpassword, setLoginPassword] = useState("");
+  const [loginEmail, setLoginEmail] = useState("email");
+  const [loginpassword, setLoginPassword] = useState("password");
 
-
+  const [signuptName, setSignupName] = useState("name");
+  const [signupEmail, setSignupEmail] = useState("email");
+  const [signupPassword, setSignupPassword] = useState("password");
+  const [signupPasswordConfirm, setSignupPasswordConfirm] = useState("confirm password");
 
   useEffect(() => {
     
@@ -58,6 +61,16 @@ function App(){
           setLoginEmail={setLoginEmail}
           loginpassword={loginpassword}
           setLoginPassword={setLoginPassword}
+          signuptName={signuptName}
+          setSignuptName={setSignupName}
+          signupEmail={signupEmail}
+          setSignupEmail={setSignupEmail}
+          signupPassword={signupPassword}
+          setSignupPassword={setSignupPassword}
+          signupPasswordConfirm={signupPasswordConfirm}
+          setSignupPasswordConfirm={setSignupPasswordConfirm}
+
+
         /> :
         <div>
                         <Form

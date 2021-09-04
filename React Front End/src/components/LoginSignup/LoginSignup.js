@@ -5,7 +5,11 @@ import Login from "./Login.js";
 import Signup from "./Signup.js";
 
 
-function LoginSignup({setLogin, loginEmail, setLoginEmail, loginPassword, setLoginPassword}){
+function LoginSignup({ setLogin, loginEmail, setLoginEmail,
+  loginPassword, setLoginPassword, signuptName, setSignuptName, signupEmail,
+  setSignupEmail, signupPassword, setSignupPassword, signupPasswordConfirm,
+setSignupPasswordConfirm})
+{
   
   const [loginTab, setLoginTab] = useState(true)
   const [signupTab, setSignupTab] = useState(false)
@@ -20,13 +24,6 @@ function LoginSignup({setLogin, loginEmail, setLoginEmail, loginPassword, setLog
     setSignupTab(true);
     setLoginTab(false);
   };
-
-  const loginHandler = (e) => {
-    setLogin(true);
-    console.log(`${loginEmail} + ${loginPassword}`)
-  };
-
-
 
   return (
     <div className="loginBody">
@@ -45,10 +42,17 @@ function LoginSignup({setLogin, loginEmail, setLoginEmail, loginPassword, setLog
           loginPassword={loginPassword}
           setLoginPassword={setLoginPassword}
         /> :
-        <Signup />}
-
-
-      <button onClick={loginHandler} className="loginBtns">Enter</button>
+        <Signup
+          setLogin={setLogin}
+          signuptName={signuptName}
+          setSignuptName={setSignuptName}
+          signupEmail={signupEmail}
+          setSignupEmail={setSignupEmail}
+          signupPassword={signupPassword}
+          setSignupPassword={setSignupPassword}
+          signupPasswordConfirm={signupPasswordConfirm}
+          setSignupPasswordConfirm = {setSignupPasswordConfirm}
+        />}
     </div>
   ); 
 }
