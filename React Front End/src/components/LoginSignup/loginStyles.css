@@ -26,6 +26,28 @@ header {
   color: gray;
 }
 
+.userNameGreen {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+  margin: 3vh;
+  color: gray;
+  outline-style: solid;
+  outline-color: rgb(50, 156, 50);
+}
+
+.userNameRed {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+  margin: 3vh;
+  color: gray;
+  outline-style: solid;
+  outline-color: rgb(165, 44, 44);
+}
+
 .loginBtns {
   color: white;
   font-family: "Poppins", sans-serif;

@@ -21,14 +21,14 @@ use App\Http\Controllers\TaskController;
 Route::group([
     "middleware"=>"api"
 ], function($router){
-    $router->get("/user", [UserController::class, "getUser"]);
-    // Needs finishing 
-    $router->post("/newusers", [UserController::class, "createUser"]);
-    $router->put("/user/{id}", [UserController::class, "updateUser"]);
-        
-    $router->post("/users/session", [UserController::class, "login"]);
-    // Needs finishing 
 
+    $router->get("/user", [UserController::class, "getUser"]);
+    $router->post("/user", [UserController::class, "createUser"]);
+    $router->delete("/user/{id}", [UserController::class, "deleteUser"]);
+        
+    $router->post("/user/session", [UserController::class, "addQuestions"]);
+    $router->delete("/user/session", [UserController::class, "deleteQuestions"]);
+    $router->post("/user/session", [UserController::class, "toggleComplete"]);
 
 });
 

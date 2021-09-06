@@ -4,6 +4,7 @@ import Form from "./components/Form";
 import TodoList from "./components/TodoList";
 import LoginSignup from "./components/LoginSignup/LoginSignup";
 import Footer from "./components/Footer";
+import DeleteForm from "./components/deleteForm";
 
 function App(){
   const [inputText, setInputText] = useState("");
@@ -12,13 +13,15 @@ function App(){
   const [filteredTodos, setFilteredTodos] = useState([]);
   const [loggedIn, setLogin] = useState(false)
 
-  const [loginEmail, setLoginEmail] = useState("email");
-  const [loginpassword, setLoginPassword] = useState("password");
+  const [loginEmail, setLoginEmail] = useState("");
+  const [loginpassword, setLoginPassword] = useState("");
 
-  const [signuptName, setSignupName] = useState("name");
-  const [signupEmail, setSignupEmail] = useState("email");
-  const [signupPassword, setSignupPassword] = useState("password");
-  const [signupPasswordConfirm, setSignupPasswordConfirm] = useState("confirm password");
+  const [signuptName, setSignupName] = useState("");
+  const [signupEmail, setSignupEmail] = useState("");
+  const [signupPassword, setSignupPassword] = useState("");
+  const [signupPasswordConfirm, setSignupPasswordConfirm] = useState("");
+
+  const [deleteAccountToggle, setDeleteAccountToggle] = useState(false);
 
   useEffect(() => {
     
@@ -40,6 +43,11 @@ function App(){
     filterHandler()
   }, [todos, status]);
 
+
+  const deleteAccount = () =>
+  {
+    setDeleteAccountToggle(true)
+  }
 
   const logoutHandler = () =>{
     setLogin(false)
@@ -91,8 +99,14 @@ function App(){
       {loggedIn === true ?
         <div>
           <button onClick={logoutHandler} className="logoutBtn">Logout</button>
-          <button  className="deleteAccount">Delete Account</button>
-        </div>: null}
+          <button className="deleteAccount"
+          onClick={deleteAccount}>Delete Account</button>
+        </div> : null}
+      {deleteAccountToggle === true ?
+        <DeleteForm
+          loginpassword={loginpassword}
+          setLoginPassword={setLoginPassword}
+      /> : null}
         
 <Footer/>
     </div>

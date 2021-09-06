@@ -21,11 +21,19 @@ setLoginPassword(e.target.value)
   return (
     <div >
       <br/>
-      <input onChange={loginEmailHandler} type="text" className="userName" value={loginEmail} />
+      <input onChange={loginEmailHandler}
+        type="text"
+        className="userName"
+        value={loginEmail}
+        placeholder="email" />
       <br/>
-      <input onChange={loginPasswordHandler} type="text" className="password" value={loginPassword} />
+      <input onChange={loginPasswordHandler}
+        type="text" className="password"
+        value={loginPassword}
+        placeholder="password" />
         <br />
-      <button onClick={loginHandler}className="loginBtns">Enter</button>
+      <button onClick={loginHandler}
+        className="loginBtns">Enter</button>
     </div>
   ); 
 }
